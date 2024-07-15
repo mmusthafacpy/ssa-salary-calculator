@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input[type="file"],
+input[type="number"],
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="file"]:hover,
+input[type="number"]:hover {
+    border-color: #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #777;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+}
+
+#results p {
+    font-size: 1.1em;
+    color: #444;
+}
+
+#totalSalary.highlight {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745;
+    background: #e9ffe9;
+    padding: 10px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    margin-top: 20px;
+}

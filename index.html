@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel File Upload and Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SSA SALARY CALCULATOR</h1>
+        <label>Upload Current month time sheet:</label>
+        <input type="file" id="currentMonthFileInput" />
+        <br>
+        <label>Upload Previous month time sheet:</label>
+        <input type="file" id="previousMonthFileInput" onchange="disableOTDaysInput()" />
+        <br>
+        <label>Enter number of OT days in previous month:</label>
+        <input type="number" id="otDaysInput" placeholder="Enter number of OT days" oninput="disablePreviousMonthFileInput()" />
+        <br>
+        <label>Enter fixed salary:</label>
+        <input type="number" id="fixedSalaryInput" placeholder="Enter fixed salary" />
+        <br>
+        <button onclick="processFiles()">Calculate salary</button>
+    </div>
+    <footer>
+        <p>Powered by MAAJ creators</p>
+        <img src="https://i.postimg.cc/sfkXSNsp/image.png" alt="MAAJ Logo" />
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

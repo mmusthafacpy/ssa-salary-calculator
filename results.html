@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculation Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="results">
+            <p id="currentMonthInfo"></p>
+            <p id="previousMonthInfo"></p>
+            <p id="overtimeDays"></p>
+            <p id="otSalary"></p>
+            <p id="holidaySalary"></p>
+            <p id="totalSalary" class="highlight"></p>
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+    <footer>
+        <p>Powered by MAAJ creators</p>
+        <img src="https://i.postimg.cc/sfkXSNsp/image.png" alt="MAAJ Logo" />
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("currentMonthInfo").innerText = localStorage.getItem("currentMonthInfo");
+            document.getElementById("previousMonthInfo").innerText = localStorage.getItem("previousMonthInfo");
+            document.getElementById("overtimeDays").innerText = localStorage.getItem("overtimeDays");
+            document.getElementById("otSalary").innerText = localStorage.getItem("otSalary");
+            document.getElementById("holidaySalary").innerText = localStorage.getItem("holidaySalary");
+            document.getElementById("totalSalary").innerText = localStorage.getItem("totalSalary");
+        });
+
+        function goBack() {
+            localStorage.clear();
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
